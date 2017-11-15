@@ -21,12 +21,8 @@ export default {
     Navigation },
   name: 'app',
   created: function () {
-    const token = localStorage.getItem('user-token')
-    if (token) {
-      this.$store.dispatch(USER_REQUEST, token).catch( (err) =>{
-        // Check here if the response is unauthorized. If so, redirect to /
-        // this.$router.replace('/')
-      })
+    if (this.$store.getters.isAuthenticated) {
+      this.$store.dispatch(USER_REQUEST)
     }
   }
 }

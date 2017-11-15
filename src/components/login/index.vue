@@ -39,7 +39,8 @@
     },
     methods: {
       login: function () {
-        this.$store.dispatch(AUTH_REQUEST).then(() => {
+        const { username, password } = this
+        this.$store.dispatch(AUTH_REQUEST, { username, password }).then(() => {
           this.$router.push('/')
         })
       }
