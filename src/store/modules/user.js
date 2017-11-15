@@ -6,11 +6,12 @@ import { AUTH_LOGOUT } from '../actions/auth'
 const state = { status: '', profile: {} }
 
 const getters = {
-  getProfile: state => state.profile
+  getProfile: state => state.profile,
+  isProfileLoaded: state => !!state.profile.name,
 }
 
 const actions = {
-  [USER_REQUEST]: ({commit}) => {
+  [USER_REQUEST]: ({commit, dispatch}) => {
     commit(USER_REQUEST)
     apiCall({url: 'user/me'})
       .then(resp => {
@@ -18,6 +19,8 @@ const actions = {
       })
       .catch(resp => {
         commit(USER_ERROR)
+        // if resp is unauthorized, logout, to
+        dispatch(AUTH_LOGOUT)
       })
   },
 }

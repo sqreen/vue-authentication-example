@@ -4,11 +4,11 @@
 
 <template>
   <div class="sq-footer">
-    Made w/ love @ Sqreen
+    Made w/ love @&nbsp;<a target="_blank" href="https://sqreen.io">Sqreen</a>
   </div>
 </template>
 
-<style>
+<style scoped>
   .sq-footer {
     background-color: rgb(183, 72, 14);
     height: 20px;
@@ -18,6 +18,9 @@
     color: white;
     align-items: center;
     padding-right: 1em;
+  }
+  a {
+    color:white;
   }
 </style>
 
