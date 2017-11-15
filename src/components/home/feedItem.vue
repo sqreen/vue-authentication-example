@@ -19,9 +19,5 @@
   export default {
     name: 'feedItem',
     props: {feed: Object},
-    components: {},
-    data () {
-      return {}
-    },
   }
 </script>

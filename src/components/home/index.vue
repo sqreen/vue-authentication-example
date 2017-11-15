@@ -9,8 +9,8 @@
       <feed-item v-for="(feed, index) in fakeFeed" :key="index" :feed="feed"/>
     </div>
     <div v-if="!isAuthenticated && authStatus !== 'loading'">
-        <h1>Welcome to DogeBook !</h1>
-        <p>When meeting new doge friends is harder than ever, Dogebook closes the gap between all paws in the world</p>
+      <h1>Welcome to DogeBook !</h1>
+      <p>When meeting new doge friends is harder than ever, Dogebook closes the gap between all paws in the world</p>
       <login/>
     </div>
   </div>
@@ -33,7 +33,8 @@ e
   export default {
     components: {
       Login,
-      FeedItem},
+      FeedItem
+    },
     name: 'home',
     computed: {
       ...mapGetters(['isAuthenticated', 'authStatus']),
@@ -42,7 +43,7 @@ e
       }
     },
     data () {
-      return ({fakeFeed: fakeFeed})
+      return ({ fakeFeed })
     },
   }
 </script>

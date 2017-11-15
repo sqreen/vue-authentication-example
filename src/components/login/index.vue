@@ -30,7 +30,6 @@
 
   export default {
     name: 'login',
-    components: {},
     data () {
       return {
         username: 'dogo',

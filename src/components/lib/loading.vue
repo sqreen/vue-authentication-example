@@ -21,7 +21,6 @@
 
 <style scoped>
   .loader{
-    margin: 0 0 2em;
     height: 100px;
     width: 100%;
     text-align: center;

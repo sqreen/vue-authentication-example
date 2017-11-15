@@ -27,10 +27,5 @@
 <script>
   export default {
     name: 'sqreen-footer',
-    props: {},
-    components: {},
-    data () {
-      return {}
-    },
   }
 </script>

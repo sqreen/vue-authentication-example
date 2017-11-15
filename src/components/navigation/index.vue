@@ -66,8 +66,6 @@
 
   export default {
     name: 'navigation',
-    props: {},
-    components: {},
     methods: {
       logout: function () {
         this.$store.dispatch(AUTH_LOGOUT).then(() => this.$router.push('/login'))
@@ -77,12 +75,8 @@
       ...mapGetters(['getProfile', 'isAuthenticated', 'isProfileLoaded']),
       ...mapState({
         authLoading: state => state.auth.status === 'loading',
-        userLoading: state => state.user.status === 'loading',
         name: state => `${state.user.profile.title} ${state.user.profile.name}`,
       })
-    },
-    data () {
-      return {}
     },
   }
 </script>

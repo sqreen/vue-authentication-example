@@ -20,10 +20,5 @@
 <script>
   export default {
     name: 'center-container',
-    props: {},
-    components: {},
-    data () {
-      return {}
-    },
   }
 </script>
