@@ -1,6 +1,12 @@
-# auth-handling
+# vue-auth-handling
 
-> A Vue.js project
+## The project
+
+This repo is a support for [this article](https://blog.sqreen.io/authentication-best-practices-for-vue/) and a [talk](https://docs.google.com/presentation/d/17e4U-XDMuVXGIj26OXndfAsXOpFjPjjb6QHhTJbBZnI/edit?usp=sharing) given to VueJS Paris meetup
+
+[Demo](https://vue-auth-example.netlify.com) of this repo.
+
+
 
 ## Build Setup
 
