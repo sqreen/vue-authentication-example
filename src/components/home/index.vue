@@ -23,7 +23,7 @@
     flex-direction: column;
   }
 </style>
-e
+
 <script>
   import fakeFeed from './fakeFeed'
   import FeedItem from './feedItem.vue'
