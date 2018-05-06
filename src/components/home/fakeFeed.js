@@ -1,15 +1,18 @@
 import faker from 'faker'
 
-const generateFeed = () => {
-  return ({
+function feedGenerator (nb) {
+  let res = []
+  for (var i = 1; i <= nb; i++) {
+    res.push(generateFeed())
+  }
+  return res
+};
+
+function generateFeed () {
+  return {
     name: `${faker.name.firstName()} ${faker.name.lastName()}`,
     content: faker.random.words(20),
-  })
-}
-
-const feedGenerator = (nb) => {
-  // return new Array(nb).map(generateFeed)
-  return [generateFeed(), generateFeed(), generateFeed()]
+  }
 }
 
 export default feedGenerator(10)
